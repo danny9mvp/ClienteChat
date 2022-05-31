@@ -5,19 +5,21 @@
 package com.poli.clientechat.model;
 
 /**
- *
- * @author dannymvp
+ * Clase modelo para la lógica de transmisión de mensajes.
+ * 
  */
 public class Message {
-    private String username;
+    
+    private String from;
     private String content;
+    private String to;
 
-    public String getUsername() {
-        return username;
+    public String getFrom() {
+        return from;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setFrom(String from) {
+        this.from = from;
     }
 
     public String getContent() {
@@ -26,6 +28,14 @@ public class Message {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public String getTo() {
+        return to;
+    }
+
+    public void setTo(String to) {
+        this.to = to;
     }
     
 }
